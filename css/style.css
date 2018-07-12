@@ -1,6 +1,46 @@
 body {
   margin-top: 44px;
-  font-family: Lato, sans-serif; }
+  font-family: Lato, sans-serif;
+  color: #262626; }
+  body .footnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #fff;
+    position: fixed;
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+    height: 44px;
+    bottom: 0;
+    border-top: 1px solid #ddd; }
+    body .footnav .home {
+      background: url("../images/home.png") no-repeat center;
+      background-size: contain;
+      width: 24px;
+      height: 24px; }
+    body .footnav .heart {
+      background: url("../images/like.png") no-repeat center;
+      background-size: contain;
+      width: 24px;
+      height: 24px; }
+    body .footnav .add {
+      background: url("../images/add.png") no-repeat center;
+      background-size: contain;
+      width: 24px;
+      height: 24px; }
+    body .footnav .profile {
+      background: url("../images/profile.png") no-repeat center;
+      background-size: contain;
+      width: 24px;
+      height: 24px; }
+    body .footnav .search {
+      background: url("../images/search.png") no-repeat center;
+      background-size: contain;
+      width: 24px;
+      height: 24px; }
   body .nav {
     display: flex;
     align-items: center;
@@ -8,25 +48,42 @@ body {
     flex-direction: row;
     background-color: #fff;
     position: fixed;
-    top: 0;
     padding: 0 16px;
     width: 100%;
-    height: 44px;
-    border-bottom: 1px solid #ddd;
     box-sizing: border-box;
-    z-index: 100; }
+    z-index: 100;
+    height: 44px;
+    top: 0;
+    border-bottom: 1px solid #ddd; }
+    body .nav .logo {
+      background: url("../images/instagram-logo.png") no-repeat center;
+      background-size: contain;
+      width: 120px;
+      height: 35px; }
+    body .nav .right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 70px; }
+    body .nav .left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 160px; }
     body .nav .camera {
       background: url("../images/photo-camera.png") no-repeat center;
       background-size: contain;
       width: 24px;
       height: 24px; }
-    body .nav .logo {
-      background: url("../images/instagram-logo.png") no-repeat center;
+    body .nav .send {
+      background: url("../images/send.png") no-repeat center;
       background-size: contain;
-      height: 100%;
-      width: 120px; }
-    body .nav .addFriend {
-      background: url("../images/add-user.png") no-repeat center;
+      width: 24px;
+      height: 24px; }
+    body .nav .tv {
+      background: url("../images/television.png") no-repeat center;
       background-size: contain;
       width: 24px;
       height: 24px; }
@@ -129,5 +186,69 @@ body {
             border-radius: 50%;
             display: block;
             border: 2.5px solid #fff; }
+      body .main .section .bottom {
+        padding: 0 16px; }
+        body .main .section .bottom .response {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: row;
+          height: 40px;
+          margin-top: 4px; }
+          body .main .section .bottom .response .left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            width: 100px;
+            height: 100%; }
+        body .main .section .bottom .likes {
+          font-weight: bold;
+          color: #262626;
+          font-size: 14px; }
+        body .main .section .bottom p {
+          margin: 10px 0; }
+          body .main .section .bottom p span.name {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 600; }
+        body .main .section .bottom p:not(:first-of-type)::after {
+          content: " ";
+          background: url("../images/like.png") no-repeat center;
+          background-size: contain;
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          right: 20px; }
+        body .main .section .bottom .comments {
+          color: #888; }
+        body .main .section .bottom .addComment {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: row; }
+          body .main .section .bottom .addComment img {
+            display: block;
+            border-radius: 50%;
+            box-sizing: border-box;
+            border: 3px solid #fff; }
+          body .main .section .bottom .addComment input {
+            position: relative;
+            border: none;
+            outline: none;
+            margin-left: 3px;
+            width: 100%;
+            padding-left: 3px;
+            padding-right: 45px;
+            padding-bottom: 3px; }
+            body .main .section .bottom .addComment input:focus {
+              border-bottom: 0.5px solid #bbb; }
+          body .main .section .bottom .addComment::after {
+            content: "Post";
+            color: aqua;
+            opacity: 0.5;
+            width: 15px;
+            position: absolute;
+            right: 40px; }
 
 /*# sourceMappingURL=style.css.map */

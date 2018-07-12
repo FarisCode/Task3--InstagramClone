@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Instagram</title>
+    <title>Instagram Clone</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="nav">
-        <div class="camera"></div>
-        <div class="logo"></div>
-        <div class="addFriend"></div>
+        <div class="left">
+            <div class="camera"></div>
+            <div class="logo"></div>
+        </div>
+        <div class="right">
+            <div class="tv"></div>
+            <div class="send"></div>
+        </div>
     </div>
     <div class="stories">
         <div class="top">
@@ -91,16 +97,55 @@
                     </div>
                     <span>sarcasm</span>
                 </div>
-                <img  src="images/more.png" alt="">
+                <img src="images/more.png" alt="">
             </div>
             <div class="post">
                 <img src="images/post.png" width="100%" alt="">
             </div>
-            <div class="response"></div>
-            <div class="caption">
-                <span class="name"></span>
+            <div class="bottom">
+                <div class="response">
+                    <div class="left">
+                        <img src="images/like.png">
+                        <img src="images/comment-white-oval-bubble.png">
+                        <img src="images/send.png">
+                    </div>
+                    <div class="right">
+                        <img src="images/bookmark-white.png">
+                    </div>
+                </div>
+                <span class="likes">35,362 likes</span>
+                <p>
+                    <span class="name">sarcasm</span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste fugit nobis quam explicabo rerum sequi officiis, dolorum quod
+                    dolores et officia enim accusantium suscipit neque a totam maxime fuga veritatis!
+                </p>
+                <span class="comments">View all 1471 comments</span>
+                <p>
+                    <span class="name">jess</span>
+                    Lorem ipsum dolor sit amet.
+                </p>
+                <p>
+                    <span class="name">torto</span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque non aperiam officiis earum nam?
+                </p>
+                <p>
+                    <span class="name">sarcasm</span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="addComment">
+                    <img src="images/pic.jpg" width="35px" height="35px">
+                    <input type="text" placeholder="Add a comment...">
+                    <span></span>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="footnav">
+        <div class="home"></div>
+        <div class="search"></div>
+        <div class="add"></div>
+        <div class="heart"></div>
+        <div class="profile"></div>
     </div>
     <div class="timeline"></div>
 </body>
