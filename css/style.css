@@ -1,0 +1,133 @@
+body {
+  margin-top: 44px;
+  font-family: Lato, sans-serif; }
+  body .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    padding: 0 16px;
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    z-index: 100; }
+    body .nav .camera {
+      background: url("../images/photo-camera.png") no-repeat center;
+      background-size: contain;
+      width: 24px;
+      height: 24px; }
+    body .nav .logo {
+      background: url("../images/instagram-logo.png") no-repeat center;
+      background-size: contain;
+      height: 100%;
+      width: 120px; }
+    body .nav .addFriend {
+      background: url("../images/add-user.png") no-repeat center;
+      background-size: contain;
+      width: 24px;
+      height: 24px; }
+  body .stories {
+    height: 125px;
+    width: auto;
+    box-sizing: border-box;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; }
+    body .stories .top {
+      margin: 0 16px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row; }
+    body .stories .days {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      padding-left: 8px;
+      overflow-x: scroll; }
+      body .stories .days::-webkit-scrollbar {
+        visibility: hidden; }
+      body .stories .days .pres {
+        position: relative;
+        padding: 0 8px; }
+        body .stories .days .pres:first-of-type .wrap {
+          background: none; }
+        body .stories .days .pres:first-of-type::after {
+          content: " ";
+          background-image: url("../images/plus.png");
+          background-size: contain;
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          bottom: 20px;
+          right: 15px;
+          z-index: 10; }
+        body .stories .days .pres span {
+          margin-top: 3px;
+          color: #262626;
+          display: block;
+          font-size: 12px;
+          line-height: 14px;
+          overflow: hidden;
+          text-align: center;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 100%; }
+        body .stories .days .pres .wrap {
+          display: block;
+          margin: auto;
+          background: -webkit-linear-gradient(right top, #DB0092, #FF9F45);
+          width: 65px;
+          height: 65px;
+          position: relative;
+          border-radius: 50%; }
+          body .stories .days .pres .wrap img {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            border-radius: 50%;
+            display: block;
+            box-sizing: border-box;
+            border: 3px solid #fff; }
+  body .main {
+    height: 1000px; }
+    body .main .section {
+      margin-bottom: 15px; }
+      body .main .section .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 10px 16px; }
+        body .main .section .top span {
+          margin-left: 12px;
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 600; }
+        body .main .section .top div {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: row; }
+        body .main .section .top .pres .wrap {
+          display: block;
+          margin: auto;
+          background: -webkit-linear-gradient(right top, #DB0092, #FF9F45);
+          width: 40px;
+          height: 40px;
+          position: relative;
+          border-radius: 50%; }
+          body .main .section .top .pres .wrap img {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            border-radius: 50%;
+            display: block;
+            border: 2.5px solid #fff; }
+
+/*# sourceMappingURL=style.css.map */
