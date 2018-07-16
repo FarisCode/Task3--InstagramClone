@@ -44,7 +44,7 @@ $baseColor:#262626;
 }
 
 body {
-    margin-top: 44px;
+    margin: 44px 0;
     font-family: $fontbase;
     color: $baseColor;
     .footnav {
@@ -295,7 +295,7 @@ body {
                     }
                     &::after {
                         content: "Post";
-                        color: aqua;
+                        color: #555;
                         opacity: 0.5;
                         width: 15px;
                         position: absolute;
@@ -326,7 +326,7 @@ body {
         background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 54%, rgba(255, 255, 255, 0.01) 55%, rgba(66, 66, 66, 0.55) 100%) !important;
         background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 54%, rgba(255, 255, 255, 0.01) 55%, rgba(66, 66, 66, 0.55) 100%) !important;
         background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 54%, rgba(255, 255, 255, 0.01) 55%, rgba(66, 66, 66, 0.55) 100%) !important;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 54%, rgba(255, 255, 255, 0.01) 55%, rgba(66, 66, 66, 0.55) 100%) !important;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 54%, rgba(255, 255, 255, 0.01) 55%, rgba(0, 0, 0, 0.9) 100%) !important;
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#424242', GradientType=0) !important;
         position: fixed;
         left: 0;
@@ -334,19 +334,62 @@ body {
         width: 100vw;
         height: 100vh;
     }
-
     .menu {
         position: fixed;
         bottom: 0;
         .top {
+            width: 90vw;
             @include flex();
-            .search {
-                @include backgroundIcon(search);
+            margin: 15px 10px;
+            .searchs {
+                @include backgroundIcon(searchs);
             }
-            input{
+            .setting {
+                @include backgroundIcon(settings);
+            }
+            input {
+                width: 80vw;
+                margin-left: 10px;
                 background-color: transparent;
-                border:none;
+                border: none;
                 outline-color: none;
+                color: #fff;
+                &:focus{
+                    outline-color: transparent;
+                }
+            }
+        }
+        .mid {
+            @include flex(flex-start);
+            height: 100%;
+            overflow-x: scroll;
+            border-bottom: 1px solid #aaa;
+            margin-bottom: 20px;
+            span {
+                display: block;
+                font-size: 20px;
+                color: #aaa;
+                padding: 10px;
+                &:hover ,&:active {
+                    color: #fff;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+        .bottom{
+            @include flex(flex-start);
+            width: 300vw;
+            height: 100%;
+            overflow-x: scroll;
+            .box{
+                background: url("../images/0.jpeg") center no-repeat;
+                background-size: contain;
+                height: 110px;
+                width: 80px;
+                border-radius: 20px;
+                bottom: 1px solid #777;
+                margin: 20px 5px;
+                box-sizing: border-box;
             }
         }
     }
